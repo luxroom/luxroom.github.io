@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/ css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.header .logo {
+    font-size: 2.2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-align: none;
+    margin-left: 40px;
+}
+
+.nav a::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scalex(0);
+    transition: .5s;
+}
+
+.nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.Inicio{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('imágenes/fondo.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 100px 0;
+}
+
+.Inicio .Contenido {
+    max-width: 600px;
+    color: #fff;
+}
+
+.Contenido h2 {
+    font-size: 3em;
+    letter-spacing: .03em;
+}
+
+.Contenido p {
+    margin: 10px 0 40px;
+}
+
+.Contenido p br{
+    margin: 10px 0 40px;
+}
+
+
+.Contenido a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    font-weight: 500;
+    padding: 10px 40px;
+    border-radius: 40px;
+    transition: .5s;
+}
+
+.Contenido a:hover {
+    background: #1b0505;
+}
+
+.Inicio .wrapper-inicio {
+    position: relative;
+    width: 440px;
+}
+
+.wrapper-inicio h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper-inicio .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 40px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 25px 0 45px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+} 
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    font-size: .8em;
+    top: -14px;
+    left: 17px;
+}
+
+.input-box .icon {
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 1.2em;
+    color: #fff;
+
+}
+
+.wrapper-inicio .recordar-olvidar {
+    font-size: .9em;
+    color: #fff;
+    margin: -25px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recordar-olvidar{
+    accent-color: #2e0808;
+    margin-right: 3px;
+}
+.recordar-olvidar a {
+    color: #fff;
+    text-decoration: none
+}
+
+.recordar-olvidar a:hover {
+    text-decoration: underline;
+}
+
+.wrapper-inicio .btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #1b0505, #a32828);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500; 
+}
+
+.wrapper-inicio .registro {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.registro p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registro p a:hover {
+    text-decoration: underline;
+}
